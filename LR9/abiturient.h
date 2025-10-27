@@ -12,15 +12,24 @@ class Abiturient {
     double avgGrade;
 public:
     Abiturient() {
-      id = 0;
-      surname = "";
-      name = "";
-      patronymic = "";
-      address = "";
-      phoneNumber = "";
-      avgGrade = 0.0;
 
-    };
+        id = 0;
+        surname = "";
+        name = "";
+        patronymic = "";
+        address = "";
+        phoneNumber = "";
+        avgGrade = 0.0;
+
+        /*: id(0),
+        surname(""),
+        name(""),
+        patronymic(""),
+        address(""),
+        phoneNumber(""),
+        avgGrade(0){};*/
+    }
+
     Abiturient(int id, QString surname, QString name, QString patronymic, QString address, QString phoneNumber, double avgGrade);
     QString toString();
 };
